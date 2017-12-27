@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生成绩管理系统</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManageAccount">
+    <property name="title">
+     <string>账号管理</string>
+    </property>
+    <addaction name="actionLogout"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuManageFile">
+    <property name="title">
+     <string>文件管理</string>
+    </property>
+    <addaction name="actionReadStudent"/>
+    <addaction name="actionReadTeacher"/>
+    <addaction name="actionReadCourse"/>
+    <addaction name="separator"/>
+    <addaction name="actionReadStudy"/>
+    <addaction name="actionReadTeach"/>
+    <addaction name="separator"/>
+    <addaction name="actionReadDatabase"/>
+   </widget>
+   <widget class="QMenu" name="menuManageGrade">
+    <property name="title">
+     <string>成绩统计</string>
+    </property>
+    <addaction name="actionAverageScore"/>
+    <addaction name="actionPassingRate"/>
+    <addaction name="actionStandardDeviation"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuManageAccount"/>
+   <addaction name="menuManageFile"/>
+   <addaction name="menuManageGrade"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLogout">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>注销</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出程序</string>
+   </property>
+  </action>
+  <action name="actionReadStudent">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取学生信息</string>
+   </property>
+  </action>
+  <action name="actionReadTeacher">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取教师信息</string>
+   </property>
+  </action>
+  <action name="actionReadCourse">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取课程信息</string>
+   </property>
+  </action>
+  <action name="actionReadStudy">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取选课信息</string>
+   </property>
+  </action>
+  <action name="actionReadTeach">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取教学信息</string>
+   </property>
+  </action>
+  <action name="actionAverageScore">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>平均分</string>
+   </property>
+  </action>
+  <action name="actionPassingRate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>通过率</string>
+   </property>
+  </action>
+  <action name="actionStandardDeviation">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>标准差</string>
+   </property>
+  </action>
+  <action name="actionReadDatabase">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>读取数据库</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
